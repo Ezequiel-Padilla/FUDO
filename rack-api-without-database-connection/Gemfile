@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'concurrent-ruby'
+gem 'jwt'
+gem 'puma'
+gem 'rack', '~> 2.2'
+gem 'rack-protection'

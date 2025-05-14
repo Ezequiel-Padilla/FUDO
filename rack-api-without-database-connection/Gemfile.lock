@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.2.0)
+    concurrent-ruby (1.3.5)
+    jwt (2.10.1)
+      base64
+    nio4r (2.7.4)
+    puma (6.6.0)
+      nio4r (~> 2.0)
+    rack (2.2.14)
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  concurrent-ruby
+  jwt
+  puma
+  rack (~> 2.2)
+  rack-protection
+
+BUNDLED WITH
+   2.4.1

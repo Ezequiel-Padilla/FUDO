@@ -1,0 +1,1 @@
+HTTP es un protocolo de capa de aplicación que define varios tipos de peticiones (GET, POST, PUT, DELETE, etc) y respuestas que definen como se formatean y transmiten los mensajes para la comunicación web, por lo que la World Wide Web funciona de manera uniforme para todos.

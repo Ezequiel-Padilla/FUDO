@@ -1,0 +1,1 @@
+TCP es un protocolo de la capa de red que define como los dispositivos pueden establecer conexiones y transferir datos, garantizando que la información enviada llegue completa y en el orden correcto mediante métodos que detectan y corrigen posibles errores durante la transmisión.

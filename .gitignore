@@ -1,2 +1,4 @@
 # Ignore all .idea files.
 /.idea/
+./rack-api-with-database-connection/.env
+./rack-api-without-database-connection/.env

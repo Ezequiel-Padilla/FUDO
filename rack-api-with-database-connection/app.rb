@@ -41,7 +41,7 @@ class App
       token = JWT.encode({ user: data['user'], exp: Time.now.to_i + 3600 }, SECRET, 'HS256')
       json(200, token: token)
     else
-      json(401, error: 'Credenciales inválidas')
+      json(401, error: 'Invalid credentials')
     end
   end
 
@@ -52,13 +52,13 @@ class App
     begin
       payload, = JWT.decode(token, SECRET, true, algorithm: 'HS256')
       # validar que el usuario aún existe en la base
-      return json(401, error: 'Usuario no válido') unless Users.where(username: payload['user']).count.positive?
+      return json(401, error: 'Invalid user') unless Users.where(username: payload['user']).count.positive?
 
       yield
     rescue JWT::ExpiredSignature
-      json(401, error: 'Token expirado')
+      json(401, error: 'Expired token')
     rescue StandardError
-      json(401, error: 'No autorizado')
+      json(401, error: 'Unauthorized')
     end
   end
 

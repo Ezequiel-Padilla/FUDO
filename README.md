@@ -15,11 +15,6 @@ docker build -t rack-api-without-database-connection .
 docker run -p 9292:9292 rack-api-without-database-connection
 ```
 
-```bash
-docker build -t rack-api-with-database-connection .
-docker run -p 9292:9292 rack-api-with-database-connection
-```
-
 ## Levantar localmente
 
 ```bash
@@ -36,6 +31,16 @@ docker compose up --build
 ```
 
 ## Levantar localmente
+
+Debemos ingresar a nuestro motor de base de datos y crear la base de datos ```rack_api```, luego debemos ejecutar los siguientes comandos:
+```bash
+# Ingresar a la consola de PostgreSQL
+psql -U postgres
+# Crear la base de datos
+CREATE DATABASE IF NOT EXISTS rack_api;
+# Salir de la consola
+\q
+```
 
 ```bash
 bundle install

@@ -12,4 +12,4 @@ DB[:users].insert_conflict(
   username: 'admin',
   password: password_hash
 )
-puts 'Usuario semilla creado o ya existente.'
+puts 'Seed user created or already exists.'

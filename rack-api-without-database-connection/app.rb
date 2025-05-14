@@ -2,9 +2,10 @@ require 'rack'
 require 'json'
 require 'jwt'
 require 'concurrent'
+require 'dotenv/load'
 
 class App
-  SECRET = 'secret'
+  SECRET = ENV.fetch('JWT_SECRET')
   @@products = {}
   @@next_id = Concurrent::AtomicFixnum.new(0)
   @@queue   = Queue.new

@@ -3,8 +3,8 @@ services:
   db:
     image: postgres:15
     environment:
-      POSTGRES_USER: padi
-      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: rack_api
     volumes:
       - db_data:/var/lib/postgresql/data

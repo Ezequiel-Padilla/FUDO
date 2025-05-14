@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'bcrypt'
+gem 'concurrent-ruby'
+gem 'dotenv'
+gem 'jwt'
+gem 'pg'
+gem 'pry'
+gem 'puma'
+gem 'rack', '~> 2.2'
+gem 'rack-protection'
+gem 'sequel'

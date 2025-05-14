@@ -1,0 +1,38 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.2.0)
+    bigdecimal (3.1.9)
+    coderay (1.1.3)
+    concurrent-ruby (1.3.5)
+    dotenv (3.1.8)
+    jwt (2.10.1)
+      base64
+    method_source (1.1.0)
+    pg (1.5.9)
+    pry (0.15.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    rack (2.2.14)
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
+    sequel (5.92.0)
+      bigdecimal
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  concurrent-ruby
+  dotenv
+  jwt
+  pg
+  pry
+  rack (~> 2.2)
+  rack-protection
+  sequel
+
+BUNDLED WITH
+   2.5.9
